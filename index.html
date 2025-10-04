@@ -1,93 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEM ORG SEM NADA - CS2</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <img src="imgs/logo.png" alt="Logo SEM ORG SEM NADA" class="logo">
-      <ul class="nav-links">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#team">Time</a></li>
-        <li><a href="#matches">Partidas</a></li>
-        <li><a href="#jersey">Camisa</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEM ORG SEM NADA - CS2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <img src="imgs/logo.png" alt="Logo SEM ORG SEM NADA" class="logo" />
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#team">Time</a></li>
+          <li><a href="#matches">Partidas</a></li>
+          <li><a href="#jersey">Camisa</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>SEM ORG <span class="highlight">SEM NADA</span></h1>
-      <h2 id="typing"></h2>
-      <a href="#matches" class="btn">Ver Partidas</a>
-    </div>
-  </section>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>SEM ORG <span class="highlight">SEM NADA</span></h1>
+        <h2 id="typing"></h2>
+        <a href="#matches" class="btn">Ver Partidas</a>
+        <style>
+          .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff3c00, #ff7b00);
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+            font-family: Arial, sans-serif;
+            letter-spacing: 1px;
+          }
 
-  <!-- Players -->
-  <section id="team">
-    <h2>Nosso Time</h2>
-    <div class="players">
-      <div class="player-card">
-        <img src="imgs/player.png" alt="Jogador Syntax">
-        <h3>SYNTAX</h3>
-        <p>Entry Fragger</p>
+          .btn:hover {
+            background: linear-gradient(45deg, #ff7b00, #ff3c00);
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+          }
+
+          .btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          }
+        </style>
       </div>
-      <div class="player-card">
-        <img src="imgs/player.png" alt="Jogador Genérico">
-        <h3>PLAYER 2</h3>
-        <p>AWPer</p>
-      </div>
-      <div class="player-card">
-        <img src="imgs/player.png" alt="Jogador Genérico">
-        <h3>PLAYER 3</h3>
-        <p>IGL</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Matches -->
-  <section id="matches">
-    <h2>Últimas Partidas</h2>
-    <div class="matches-grid">
-      <div class="match-card win">
-        <h3>SEM ORG SEM NADA vs Opponent</h3>
-        <p>Mapa: Mirage</p>
-        <span class="score">16 - 14</span>
+    <!-- Players -->
+    <section id="team">
+      <h2>Nosso Time</h2>
+      <div class="players">
+        <div class="player-card">
+          <img src="imgs/player.png" alt="Jogador Syntax" />
+          <h3>SYNTAX</h3>
+          <p>Entry Fragger</p>
+        </div>
+        <div class="player-card">
+          <img src="imgs/player.png" alt="Jogador Genérico" />
+          <h3>PLAYER 2</h3>
+          <p>AWPer</p>
+        </div>
+        <div class="player-card">
+          <img src="imgs/player.png" alt="Jogador Genérico" />
+          <h3>PLAYER 3</h3>
+          <p>IGL</p>
+        </div>
       </div>
-      <div class="match-card loss">
-        <h3>SEM ORG SEM NADA vs Another Team</h3>
-        <p>Mapa: Inferno</p>
-        <span class="score">12 - 16</span>
+    </section>
+
+    <!-- Matches -->
+    <section id="matches">
+      <h2>Últimas Partidas</h2>
+      <div class="matches-grid">
+        <div class="match-card win">
+          <h3>SEM ORG SEM NADA vs Opponent</h3>
+          <p>Mapa: Mirage</p>
+          <span class="score">16 - 14</span>
+        </div>
+        <div class="match-card loss">
+          <h3>SEM ORG SEM NADA vs Another Team</h3>
+          <p>Mapa: Inferno</p>
+          <span class="score">12 - 16</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Jersey -->
-  <section id="jersey">
-    <h2>Camisa Oficial</h2>
-    <div class="jersey-container">
-      <img src="imgs/camisa.png" alt="Camisa Oficial" class="jersey-img">
-    </div>
-  </section>
+    <!-- Jersey -->
+    <section id="jersey">
+      <h2>Camisa Oficial</h2>
+      <div class="jersey-container">
+        <img src="imgs/camisa.png" alt="Camisa Oficial" class="jersey-img" />
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <p>📧 semorgsemnada@cs2.com</p>
-    <div class="socials">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Twitter"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord"></a>
-    </div>
-    <p>© 2025 SEM ORG SEM NADA - Todos os direitos reservados</p>
-  </footer>
+    <!-- Footer -->
+    <footer id="contact">
+      <p>📧 semorgsemnada@cs2.com</p>
+      <div class="socials">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+            alt="Twitter"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+            alt="Instagram"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+            alt="Discord"
+        /></a>
+      </div>
+      <p>© 2025 SEM ORG SEM NADA - Todos os direitos reservados</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

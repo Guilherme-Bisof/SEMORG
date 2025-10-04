@@ -1,0 +1,210 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.highlight {
+  color: #ff4500;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 2px solid #ff4500;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff4500;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  background-size: 200% 200%;
+  animation: bgAnimation 10s ease infinite;
+}
+
+@keyframes bgAnimation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero h2 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.btn {
+  background: #ff4500;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e03e00;
+  transform: scale(1.05);
+}
+
+/* Players */
+#team {
+  padding: 80px 20px;
+  background: #111;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.player-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 20px #ff4500;
+}
+
+.player-card img {
+  width: 220px;
+  border-radius: 12px;
+}
+
+/* Matches */
+#matches {
+  padding: 80px 20px;
+  background: #0d0d0d;
+}
+
+.matches-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.match-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.match-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ff4500;
+}
+
+.match-card .score {
+  display: block;
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #ff4500;
+}
+
+.match-card.loss .score {
+  color: #d63031;
+}
+
+/* Jersey */
+#jersey {
+  padding: 80px 20px;
+  text-align: center;
+  background: #111;
+}
+
+.jersey-container {
+  margin-top: 30px;
+}
+
+.jersey-img {
+  width: 300px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.jersey-img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 0 20px #ff4500;
+}
+
+/* Footer */
+footer {
+  background: #0a0a0a;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ff4500;
+}
+
+.socials img {
+  width: 30px;
+  margin: 0 10px;
+  filter: invert(100%);
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  filter: invert(40%) sepia(100%) hue-rotate(-20deg) saturate(500%);
+}
